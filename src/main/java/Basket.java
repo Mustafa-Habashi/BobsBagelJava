@@ -38,5 +38,12 @@ public class Basket {
     public static int bagelPrice(Bagel item){
         return item.getPrice();
     }
+    public static int bagelTotalPrice (Bagel ...item) {
+        int totalPrice = 0;
+        for(Bagel b : item){
+            totalPrice += b.getPrice();
+        }
+        return totalPrice;
+    }
 }
 

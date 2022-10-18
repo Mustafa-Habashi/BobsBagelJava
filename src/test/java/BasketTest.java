@@ -128,8 +128,9 @@ public class BasketTest {
         Bagel item3 = new Bagel("Bagel3",5);
 
         //Act
-        int result = Basket.bagelTotalPrice(item1);
+        int result = Basket.bagelTotalPrice(item1, item2, item3);
         //Assert
         assertEquals(result, 15);
     }
-}
+    }
+
